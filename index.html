@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Para ti, mi amor💕</title>
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  background: linear-gradient(135deg, #e6f2ff 0%, #f0e6ff 100%);
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+.caja {
+  max-width: 850px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.92);
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px rgba(102, 153, 255, 0.15);
+}
+h1 {
+  text-align: center;
+  color: #005ce6;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.contador {
+  background: linear-gradient(135deg, #cce0ff 0%, #e0ccff 100%);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contador p {
+  color: #0047b3;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+#contador {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #003380;
+}
+h2 {
+  color: #0066cc;
+  margin: 35px 0 20px;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.carta {
+  margin: 12px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.carta:hover {
+  transform: translateY(-2px);
+}
+.titulo {
+  background: linear-gradient(90deg, #e6f0ff, #f0e6ff);
+  padding: 18px 22px;
+  border-radius: 14px;
+  border: 2px solid #b3c6ff;
+  font-weight: 600;
+  color: #0047b3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo::after {
+  content: '▼';
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+.abierta .titulo::after {
+  transform: rotate(180deg);
+}
+.texto {
+  display: none;
+  padding: 22px;
+  background: #fafcff;
+  border: 2px solid #d6e0ff;
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  color: #334;
+  line-height: 1.7;
+  font-size: 1.05em;
+}
+.abierta .texto {
+  display: block;
+  animation: aparecer 0.3s ease;
+}
+@keyframes aparecer {
+  from {opacity:0; transform: translateY(-5px);}
+  to {opacity:1; transform: translateY(0);}
+}
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 25px 0;
+}
+.fotos img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid #e0e8ff;
+  box-shadow: 0 4px 12px rgba(102, 153, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+.fotos img:hover {
+  transform: scale(1.05);
+}
+.fechas {
+  background: #f0f5ff;
+  padding: 25px;
+  border-radius: 16px;
+  line-height: 2.2;
+  color: #0047b3;
+  font-size: 1.05em;
+}
+.cancion {
+  background: linear-gradient(135deg, #e6f0ff, #f0e6ff);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 25px;
+}
+.cancion p {
+  color: #0047b3;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.cancion a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+.cancion a:hover {
+  text-decoration: underline;
+}
+audio {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #005ce6;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+<div class="caja">
+<h1> Para ti, mi amor 💕</h1>
+
+<div class="contador">
+<p>Estamos juntos desde el 13 de Agosto de 2025</p>
+<div id="contador">0 días 💙</div>
+</div>
+
+<h2>💌 Toca cada carta</h2>
+
+<div class="carta" onclick="this.classList.toggle('abierta')">
+<div class="titulo">💙 Lo más lindo que me pasó</div>
+<div class="texto">Conocerte fue lo más bonito que me paso. Cada día a tu lado soy muy felizz, y no me canso de agradecer que estés conmigo a pesar de todo. Gracias por elegirme 💕</div>
+</div>
+
+<div class="carta" onclick="this.classList.toggle('abierta')">
+<div class="titulo">✨ Lo que amo de ti</div>
+<div class="texto">Amo tu sonrisa que me alegra todo, tu forma de quererme, cómo me miras y cómo me haces sentir. Eres mi persona favorita posta, y cada día me enamoro más de ti. </div>
+</div>
+
+<div class="carta" onclick="this.classList.toggle('abierta')">
+<div class="titulo">🔮 Lo que quiero con nosotros</div>
+<div class="texto">Quiero todo contigo: reír, soñar, crecer, pero sobretodo que nos sigamos eligiendo siiempre. Quiero compartir cada momento, cada risa, cada día. Te amo hoy y siempre💕 </div>
+</div>
+
+<h2>📸 Nuestros recuerdos</h2>
+<div class="fotos">
+<img src="foto1.jpeg" alt="Nosotros">
+<img src="foto2.jpeg" alt="Nosotros">
+<img src="foto3.jpeg" alt="Nosotros">
+<img src="foto4.jpeg" alt="Nosotros">
+</div>
+
+<h2>📅 Nuestras fechas</h2>
+<div class="fechas">
+💬 Empezamos a hablar: 17 de Julio de 2025<br>
+💫 Nos hicimos novios: 13 de Agosto de 2025<br>
+🎉 Primer año juntos: 13 de Agosto de 2026
+</div>
+
+<h2>🎶 Nuestra canción</h2>
+<div class="cancion">
+<p>💙 Morfina — Humbe 💙</p>
+<audio controls>
+<source src="morfina_humbe.mp3" type="audio/mpeg">
+
+<p style="margin-top:10px;">Si no suena → <a href="https://www.youtube.com/watch?v=K5Z6Z999z6A" target="_blank">Escuchar en YouTube 💙</a></p>
+</div>
+
+<footer>
+Te amo hasta el infinito y más allá ❤️‍🩹<br>
+Siempre juntos 💞
+</footer>
+</div>
+
+<script>
+const fechaInicio = new Date('2025-08-13T00:00:00');
+function actualizarContador() {
+  const ahora = new Date();
+  const diferencia = ahora - fechaInicio;
+  const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+  const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+  const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+  document.getElementById('contador').innerHTML = 
+    `<strong>${dias}</strong> días, ${horas}h ${minutos}m ${segundos}s 💙`;
+}
+actualizarContador();
+setInterval(actualizarContador, 1000);
+</script>
+</body>
+</html>
